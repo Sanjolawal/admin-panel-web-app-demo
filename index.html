@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- side menu/navigation bar -->
+    <nav class="menus">
+      <img src="images/logo.svg" alt="logo" />
+      <h1 class="h1">MENUS</h1>
+      <div class="container"></div>
+    </nav>
+    <div class="mshadow"></div>
+
+    <!-- dashboard section -->
+    <div class="dashboard">
+      <!-- top menu/navigation bar -->
+      <nav class="topnav">
+        <div class="first">
+          <span class="material-symbols-outlined menu"> menu </span>
+          <span class="material-symbols-outlined searchIcon"> search </span>
+        </div>
+        <div class="second">
+          <span class="material-symbols-outlined shop"> shopping_cart </span>
+          <div class="topmenus">
+            <span class="material-symbols-outlined"> chat_bubble </span>
+            <span class="sup"> </span>
+          </div>
+          <div class="topmenus">
+            <span class="material-symbols-outlined"> notifications </span>
+            <span class="sup" id="sup2"> </span>
+          </div>
+          <div class="profile">
+            <img src="images/avatar.jpg" alt="avatar" class="avatar" />
+            <p class="p">Hi, Sanjo</p>
+            <span class="material-symbols-outlined"> expand_more </span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- topnav bar popups -->
+      <div class="popup">
+        <div class="hold1">
+          <h3 class="h3">User Profile</h3>
+          <div class="profile2">
+            <img src="images/avatar.jpg" alt="avatar" class="avatar" />
+            <div class="container">
+              <h3 class="h3">Sanjo Lawal</h3>
+              <p class="p">Administrator</p>
+              <section class="section">
+                <span class="material-symbols-outlined"> mail</span>
+                <p class="p">sanjo3019@gmail.com</p>
+              </section>
+            </div>
+          </div>
+          <div class="profile2Container"></div>
+
+          <button class="button">Logout</button>
+        </div>
+
+        <div class="notifications">
+          <h3 class="h3">Notifications <span class="span"> 5 new</span></h3>
+          <div class="profile3Container"></div>
+
+          <button class="button">See all notifications</button>
+        </div>
+
+        <div class="chats">
+          <h3 class="h3">Messages <span class="span2"> 5 new</span></h3>
+          <div class="profile4Container"></div>
+
+          <button class="button">See all messages</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="analyticsContainer"></div>
+      </div>
+      <!-- <div class="Chart">
+        <canvas id="myChart"></canvas>
+      </div> -->
+    </div>
+
+    <!-- search component -->
+    <div class="search">
+      <div class="container">
+        <input type="text" placeholder="Search here" class="input" />
+        <span class="material-symbols-outlined close"> cancel </span>
+      </div>
+      <div class="shadow"></div>
+    </div>
+
+    <!-- chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
