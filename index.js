@@ -1,5 +1,6 @@
 const menus = document.querySelector(`.menus`);
 const menu = document.querySelector(`.menu`);
+const fix = document.querySelector(`.fix`);
 const body = document.querySelector(`.body`);
 const container = document.querySelector(`.container`);
 const close = document.querySelector(`.close`);
@@ -18,6 +19,22 @@ const chats = document.querySelector(`.chats`);
 const hold1 = document.querySelector(`.hold1`);
 const main = document.querySelector(`.main`);
 const analyticsContainer = document.querySelector(`.analyticsContainer`);
+
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 40 && window.innerWidth < 1227) {
+    fix.style.background = `white`;
+    fix.style.boxShadow = ` 0 0 20px rgb(0, 0, 0, 0.2)`;
+  } else if (window.scrollY < 40 && window.innerWidth < 1227) {
+    fix.style.background = ``;
+    fix.style.boxShadow = ``;
+    fix.style.padding = `0.5rem 4vw`;
+  }
+  if (window.scrollY > 40 && window.innerWidth > 1227) {
+    fix.style.background = `rgb(250, 251, 251)`;
+  } else if (window.scrollY < 40 && window.innerWidth > 1227) {
+    fix.style.background = `rgb(250, 251, 251)`;
+  }
+});
 
 // script for displaying navigation bar
 const menuarr = [
