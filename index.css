@@ -120,7 +120,7 @@ a {
 
 .topmenus .sup {
   background: rgb(3, 201, 215);
-  height: 1vh;
+  height: 8px;
   width: 0.5rem;
   border-radius: 50%;
 }
@@ -469,6 +469,9 @@ a {
   .analyticsContainer {
     grid-template-columns: repeat(3, 36% 27% 27%);
   }
+  .menus {
+    overflow-y: scroll;
+  }
 }
 @media all and (max-width: 810px) {
   .dashboard {
@@ -489,9 +492,6 @@ a {
 @media all and (min-width: 750px) and (orientation: portrait) {
   .dashboard {
     padding-top: 1vh;
-  }
-  .topmenus .sup {
-    height: 0.5vh;
   }
   .menus .container {
     padding: 0 0 2vh 0;
