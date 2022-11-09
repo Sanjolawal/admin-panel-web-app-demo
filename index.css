@@ -1,6 +1,3 @@
-.Chart {
-  width: 50%;
-}
 body {
   margin: 0;
   padding: 0;
@@ -82,11 +79,11 @@ a {
   background: rgb(250, 251, 251);
   padding: 0.5vh 0 1vh 2vw;
   margin: 0 0 0 12.5vw;
-  width: 85.2vw;
+  width: 84.5vw;
 }
 .dashboard2 {
   margin: 0;
-  width: 97.7vw;
+  width: 96.7vw;
 }
 .fix {
   position: sticky;
@@ -405,6 +402,63 @@ a {
 .analytic .money {
   background: rgb(251, 150, 120);
 }
+.charts {
+  display: grid;
+  grid-template-columns: repeat(1, 63.5% 30%);
+  column-gap: 3.5%;
+}
+.Chart {
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.08);
+  padding: 64px 1rem 0 1rem;
+  border-radius: 15px;
+}
+.Chart .h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3125rem;
+}
+#myChart {
+  margin: 0 0 10px 10px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.circle {
+  background: yellow;
+  border-radius: 50%;
+  height: 8px;
+  width: 0.5rem;
+  background: rgb(3, 201, 215);
+}
+.chartcon1,
+.chartcon2 {
+  background: rgb(3, 201, 215);
+  padding: 24px 1rem;
+  color: white;
+  margin-top: 24px;
+  border-radius: 20px;
+}
+.chartcon2 {
+  background: rgb(251, 150, 120);
+  margin: 24px 0 24px 0;
+}
+.chart2,
+.h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.3125rem;
+}
+#Chart,
+#Chart3 {
+  margin: -1.3rem 0 -0.8rem -1.2rem;
+  border: none;
+}
 
 @media all and (max-width: 1560px) {
   .menus {
@@ -424,11 +478,11 @@ a {
   }
   .dashboard {
     margin: 0 0 0 17.5vw;
-    width: 80.2vw;
+    width: 79.2vw;
   }
   .dashboard2 {
     margin: 0;
-    width: 97.7vw;
+    width: 96.7vw;
   }
   .main {
     margin: 0;
@@ -437,6 +491,9 @@ a {
 }
 
 @media all and (max-width: 1226px) {
+  body {
+    overflow-x: hidden;
+  }
   .body2 {
     height: 100vh;
     overflow-y: hidden;
@@ -444,7 +501,7 @@ a {
   .dashboard {
     margin: 0;
     padding: 1.5vh 0 0 4vw;
-    width: 96vw;
+    width: 95vw;
   }
   .fix {
     margin-left: -4vw;
@@ -474,6 +531,13 @@ a {
     margin-left: 280px;
     width: 100vw;
   }
+  .charts {
+    grid-template-columns: repeat(1, 97%);
+    column-gap: 0;
+  }
+  .Chart {
+  padding: 14px 1rem 0 1rem;
+}
 }
 @media all and (max-width: 1024px) {
   .analyticsContainer {
@@ -484,8 +548,11 @@ a {
   }
 }
 @media all and (max-width: 810px) {
+  body {
+    overflow-x: auto;
+  }
   .dashboard {
-    width: 94.5vw;
+    width: 92.5vw;
   }
   .mshadow {
     margin-left: 268px;
@@ -550,6 +617,9 @@ a {
   }
   .analytic .section1 {
     padding-bottom: 2rem;
+  }
+  .charts {
+    grid-template-columns: repeat(1, 95%);
   }
 }
 

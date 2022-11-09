@@ -369,38 +369,141 @@ if (location.pathname === `/` || location.pathname === `/index.html`) {
   });
 
   analyticsContainer.innerHTML = analnew.join(` `);
+
+  const ctx = document.getElementById("myChart").getContext("2d");
+  const myChart = new Chart(ctx, {
+    type: `line`,
+    data: {
+      labels: [
+        `20 / 08`,
+        `21 / 08`,
+        `22 / 08`,
+        `23 / 08`,
+        `24 / 08`,
+        `25 / 08`,
+      ],
+      datasets: [
+        {
+          label: "Today's Revenue",
+          data: [10, 19, 7, 15, 11, 13],
+          backgroundColor: "rgba(3, 201, 215, 1)",
+          borderColor: "rgba(3, 201, 215, 1)",
+          borderWidth: 2.5,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          grid: {
+            display: true,
+          },
+        },
+        x: {
+          grid: {
+            display: true,
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          labels: {
+            boxWidth: 0,
+            color: `transparent`,
+            font: {
+              size: 20,
+            },
+          },
+        },
+      },
+    },
+  });
+
+  const ct = document.getElementById("Chart").getContext("2d");
+  const newChart = new Chart(ct, {
+    type: `bar`,
+    data: {
+      labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      datasets: [
+        {
+          label: "Month Earning",
+          data: [12, 19, 3, 5, 2, 3, 8, 9, 13, 6, 8, 6, 10, 7, 8, 20],
+          backgroundColor: `rgb(154,233,239)`,
+          borderColor: `rgb(154,233,239)`,
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          ticks: { color: `transparent`, beginAtZero: true },
+          grid: {
+            display: false,
+          },
+        },
+        x: {
+          ticks: { color: `transparent`, beginAtZero: true },
+          grid: {
+            display: false,
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          labels: {
+            boxWidth: 0,
+            color: `transparent`,
+            font: {
+              size: 20,
+            },
+          },
+        },
+      },
+    },
+  });
+
+  const ct3 = document.getElementById("Chart3").getContext("2d");
+  const newChart3 = new Chart(ct3, {
+    type: `line`,
+    data: {
+      labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+      datasets: [
+        {
+          label: "Traffic Increase",
+          data: [12, 19, 3, 5, 2, 3, 8, 9, 13, 6, 8, 6, 10, 7, 8, 20],
+          backgroundColor: `rgb(255,255,255)`,
+          borderColor: `rgb(255,255,255)`,
+          borderWidth: 3,
+        },
+      ],
+    },
+    options: {
+      scales: {
+        y: {
+          ticks: { color: `transparent`, beginAtZero: true },
+          grid: {
+            display: false,
+          },
+        },
+        x: {
+          ticks: { color: `transparent`, beginAtZero: true },
+          grid: {
+            display: false,
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          labels: {
+            boxWidth: 0,
+            color: `transparent`,
+            font: {
+              size: 20,
+            },
+          },
+        },
+      },
+    },
+  });
 }
-
-// const labels = ["January", "February", "March", "April", "May", "June"];
-
-// const data = {
-//   labels: labels,
-//   datasets: [
-//     {
-//       label: "My First dataset",
-//       backgroundColor: "black",
-//       data: [0, 10, 5, 2, 20, 30, 45],
-//     },
-//   ],
-// };
-
-// const config = {
-//   type: "bar",
-//   data: data,
-//   options: {
-//     scales: {
-//       y: {
-//         grid: {
-//           color: "transparent",
-//         },
-//       },
-//       x: {
-//         grid: {
-//           color: "transparent",
-//         },
-//       },
-//     },
-//   },
-// };
-
-// const myChart = new Chart(document.getElementById("myChart"), config);
