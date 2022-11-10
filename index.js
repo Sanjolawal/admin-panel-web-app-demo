@@ -21,17 +21,18 @@ const main = document.querySelector(`.main`);
 const analyticsContainer = document.querySelector(`.analyticsContainer`);
 
 document.addEventListener("scroll", () => {
-  if (window.scrollY > 40 && window.innerWidth < 1227) {
+  if (window.scrollY > 40 && window.innerWidth < 621) {
     fix.style.background = `white`;
     fix.style.boxShadow = ` 0 0 20px rgb(0, 0, 0, 0.2)`;
-  } else if (window.scrollY < 40 && window.innerWidth < 1227) {
+  } else if (window.scrollY < 40 && window.innerWidth < 621) {
     fix.style.background = ``;
     fix.style.boxShadow = ``;
-    fix.style.padding = `0.5rem 4vw`;
+    fix.style.paddingTop = `0.5rem`;
+    fix.style.paddingBottom = `0.5rem`;
   }
-  if (window.scrollY > 40 && window.innerWidth > 1227) {
+  if (window.scrollY > 40 && window.innerWidth > 620) {
     fix.style.background = `rgb(250, 251, 251)`;
-  } else if (window.scrollY < 40 && window.innerWidth > 1227) {
+  } else if (window.scrollY < 40 && window.innerWidth > 620) {
     fix.style.background = `rgb(250, 251, 251)`;
   }
 });
