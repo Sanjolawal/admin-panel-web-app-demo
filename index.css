@@ -8,9 +8,9 @@ body {
   align-items: center;
   justify-content: space-between;
   background: black;
-  margin: -2vh 0 0 0vw;
+  margin: -4px 0 0 0vw;
   color: white;
-  padding: 0 2rem;
+  padding: 0 1.3rem;
 }
 .annoucement a,
 .annoucement .material-symbols-outlined {
@@ -18,7 +18,7 @@ body {
   cursor: pointer;
 }
 .anp {
-  font-size: clamp(16px, 1.4vw, 21px);
+  font-size: clamp(14px, 1.4vw, 21px);
 }
 .menus {
   height: 100vh;
