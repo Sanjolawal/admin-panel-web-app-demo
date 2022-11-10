@@ -608,6 +608,9 @@ a {
   .profile .material-symbols-outlined {
     display: none;
   }
+  .profile .material-symbols-outlined {
+    display: grid;
+  }
   .analyticsContainer {
     grid-template-columns: repeat(1, 95%);
   }
