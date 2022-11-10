@@ -550,12 +550,6 @@ a {
   }
 }
 @media all and (max-width: 810px) {
-  body {
-    overflow-x: auto;
-  }
-  .dashboard {
-    width: 96vw;
-  }
   .mshadow {
     margin-left: 268px;
   }
@@ -598,7 +592,7 @@ a {
   .profile {
     justify-content: center;
   }
-  
+
   .topnav {
     box-sizing: border-box;
     padding: 0 0vw 0 0vw;
@@ -629,12 +623,6 @@ a {
   }
   .charts {
     grid-template-columns: repeat(1, 95%);
-  }
-}
-
-@media all and (max-width: 480px) {
-  .dashboard {
-    width: 95.5vw;
   }
 }
 
