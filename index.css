@@ -88,6 +88,8 @@ a {
 .fix {
   position: sticky;
   top: 0;
+  background: red;
+  width: 100%;
 }
 
 .topnav {
@@ -536,8 +538,8 @@ a {
     column-gap: 0;
   }
   .Chart {
-  padding: 14px 1rem 0 1rem;
-}
+    padding: 14px 1rem 0 1rem;
+  }
 }
 @media all and (max-width: 1024px) {
   .analyticsContainer {
@@ -600,13 +602,19 @@ a {
     box-sizing: border-box;
     padding: 0 0vw 0 0vw;
     column-gap: 5rem;
+    background: yellow;
+  }
+  .profile {
+    /* background: yellow; */
+    /* justify-content: end; */
   }
   .profile .avatar {
     width: 34%;
+    /* background: yellow; */
   }
   .profile .p,
   .profile .material-symbols-outlined {
-    display: none;
+    /* display: none; */
   }
   .profile .material-symbols-outlined {
     display: grid;
