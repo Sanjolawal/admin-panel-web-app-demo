@@ -3,7 +3,23 @@ body {
   padding: 0;
   font-family: "DM Sans", sans-serif;
 }
-
+.annoucement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  margin: -2vh 0 0 0vw;
+  color: white;
+  padding: 0 2rem;
+}
+.annoucement a,
+.annoucement .material-symbols-outlined {
+  color: red;
+  cursor: pointer;
+}
+.anp {
+  font-size: clamp(16px, 1.4vw, 21px);
+}
 .menus {
   height: 100vh;
   position: fixed;
@@ -495,6 +511,9 @@ a {
 @media all and (max-width: 1226px) {
   body {
     overflow-x: hidden;
+  }
+  .annoucement {
+    margin: -2vh 0 0 -4vw;
   }
   .body2 {
     height: 100vh;

@@ -1,5 +1,7 @@
 const menus = document.querySelector(`.menus`);
 const menu = document.querySelector(`.menu`);
+const annoucement = document.querySelector(`.annoucement`);
+const anclose = document.querySelector(`.anclose`);
 const fix = document.querySelector(`.fix`);
 const body = document.querySelector(`.body`);
 const container = document.querySelector(`.container`);
@@ -19,6 +21,11 @@ const chats = document.querySelector(`.chats`);
 const hold1 = document.querySelector(`.hold1`);
 const main = document.querySelector(`.main`);
 const analyticsContainer = document.querySelector(`.analyticsContainer`);
+
+// script for closing fraud alert
+anclose.addEventListener(`click`, () => {
+  annoucement.style.display = `none`;
+});
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > 40 && window.innerWidth < 621) {
