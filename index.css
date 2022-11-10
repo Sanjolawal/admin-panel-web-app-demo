@@ -88,7 +88,7 @@ a {
 .fix {
   position: sticky;
   top: 0;
-  background: red;
+  /* background: red; */
   width: 100%;
 }
 
@@ -503,7 +503,7 @@ a {
   .dashboard {
     margin: 0;
     padding: 1.5vh 0 0 4vw;
-    width: 95vw;
+    width: 96vw;
   }
   .fix {
     margin-left: -4vw;
@@ -554,7 +554,7 @@ a {
     overflow-x: auto;
   }
   .dashboard {
-    width: 92.5vw;
+    width: 96vw;
   }
   .mshadow {
     margin-left: 268px;
@@ -598,23 +598,21 @@ a {
   .profile {
     justify-content: center;
   }
+  
   .topnav {
     box-sizing: border-box;
     padding: 0 0vw 0 0vw;
     column-gap: 5rem;
-    background: yellow;
   }
   .profile {
-    /* background: yellow; */
-    /* justify-content: end; */
+    justify-content: center;
   }
   .profile .avatar {
     width: 34%;
-    /* background: yellow; */
   }
   .profile .p,
   .profile .material-symbols-outlined {
-    /* display: none; */
+    display: none;
   }
   .profile .material-symbols-outlined {
     display: grid;
